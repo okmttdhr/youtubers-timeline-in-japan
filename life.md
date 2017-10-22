@@ -1,8 +1,7 @@
 YouTuber年表
 ===============
 
-- 11/02/2005~ MEGWIN TV開設
-- ~1968 Summer job
-- 03/1976 Built a computer
-- 01/04/1976 Started a [company](http://en.wikipedia.org/wiki/Apple_Inc. "Apple Inc.")
-- 04/1976-2011 Whole bunch of interesting events
+- 11/02/2006~ インターネット放送局MEGWIN TV開設
+- 15/02/2005 YouTube設立
+- 23/05/2006~ MEGWIN TVチャンネル開設
+- 11/02/2006~ JETDAISUKEチャンネル開設
