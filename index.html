@@ -221,6 +221,7 @@ h1{
 		parseTime: function(time, point){
 			if (!point) point = 'start';
 			var data = {};
+			var title;
 			if (/^\~\d+$/.test(time)){ // ~YYYY
 				data = {
 					startYear: parseInt(time.slice(1), 10),
@@ -232,24 +233,27 @@ h1{
 				var t = time.split('/');
 				data[point + 'Month'] = parseInt(t[0], 10);
 				data[point + 'Year'] = parseInt(t[1], 10);
+				title = t[1] + '/' + t[0];
 			} else if (/^\d+\/\d+\/\d+$/.test(time)){ // DD/MM/YYYY
 				var t = time.split('/');
 				data[point + 'Date'] = parseInt(t[0], 10);
 				data[point + 'Month'] = parseInt(t[1], 10);
 				data[point + 'Year'] = parseInt(t[2], 10);
+				title = t[2] + '/' + t[1] + '/' + t[0];
 			} else if (/\d\-/.test(time)){ // TIME-TIME
 				var splitTime = time.split('-');
 				var startTime = life.parseTime(splitTime[0]);
 				var endTime = life.parseTime(splitTime[1], 'end');
 				for (var k in startTime) { data[k] = startTime[k] }
 				for (var k in endTime) { data[k] = endTime[k] }
+				title = startTime.title + '-' + endTime.title;
 			} else if (time == '~'){ // NOW
 				var now = new Date();
 				data.endYear = now.getFullYear();
 				data.endMonth = now.getMonth()+1;
 				data.endDate = now.getDate();
 			}
-			data.title = time;
+			data.title = title || time;
 			return data;
 		},
 		firstYear: null,
