@@ -38,6 +38,7 @@ YouTuber年表
 
 - 30/07/2012 GENESIS ONE設立
 - 06/2013 UUUM設立
+- 22/07/2015 VAZ設立
 - 05/11/2016 NestStage設立
 - 05/07/2017 E-DGE設立
 - 14/07/2017 siLVer設立
